@@ -21,11 +21,17 @@ public class Post {
 
     private int postId;
 
+    private float longitude;
+
+    private float latitude;
+
     private long unixTime;
 
-    public Post(String description, String imgLink, long unixTime) {
+    public Post(String description, String imgLink, float longitude, float latitude, long unixTime) {
         this.description = description;
         this.imgLink = imgLink;
+        this.longitude = longitude;
+        this.latitude = latitude;
         this.unixTime = unixTime;
     }
 }

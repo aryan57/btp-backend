@@ -23,8 +23,8 @@ public class PostService {
         return  postRepository.findPostByPostId(postId);
     }
 
-    public Post createPost(String description,String imgLink, long unixTime){
-        Post post = postRepository.insert(new Post(description,imgLink,unixTime));
+    public Post createPost(String description,String imgLink,float longitude,float latitude,long unixTime){
+        Post post = postRepository.insert(new Post(description, imgLink, longitude, latitude, unixTime));
         return post;
     }
 }

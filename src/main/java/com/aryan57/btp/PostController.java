@@ -34,6 +34,6 @@ public class PostController {
     @PostMapping("/createPost")
     public ResponseEntity<Post> createPost(@RequestBody Post payload){
         System.out.println(payload);
-        return  new ResponseEntity<>(postService.createPost(payload.getDescription(),payload.getImgLink(), payload.getUnixTime()),HttpStatus.CREATED);
+        return  new ResponseEntity<>(postService.createPost(payload.getDescription(),payload.getImgLink(), payload.getLongitude(), payload.getLatitude() , payload.getUnixTime()),HttpStatus.CREATED);
     }
 }
