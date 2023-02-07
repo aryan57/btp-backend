@@ -1,9 +1,12 @@
-package com.aryan57.btp;
+package com.aryan57.btp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.aryan57.btp.entity.Post;
+import com.aryan57.btp.service.PostService;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,7 +1,10 @@
-package com.aryan57.btp;
+package com.aryan57.btp.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.aryan57.btp.entity.Post;
+import com.aryan57.btp.repository.PostRepository;
 
 import java.util.List;
 import java.util.Optional;

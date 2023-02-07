@@ -1,4 +1,4 @@
-package com.aryan57.btp;
+package com.aryan57.btp.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
